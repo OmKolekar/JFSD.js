@@ -106,12 +106,57 @@ const students = [
 ];
 // console.log(students.map((std => (std.scores.reduce((a, b) => a + b) / 3))));
 
-let total = students.map(std => (std.scores.reduce((a, b) => a + b)));
-console.log(`Total addition: ${total}`);
-
-let average = total.map((avg, i) => (avg / students[i].scores.length).toFixed(2));
 
 
-let highest = average.filter((high) => high > 85);
-console.log(`Average score: ${average}`);
-console.log(`Average score: ${highest}`);
+// let total = students.map(std => (std.scores.reduce((a, b) => a + b)));
+// console.log(`Total addition: ${total}`);
+
+// let average = total.map((avg, i) => (avg / students[i].scores.length).toFixed(2));
+// console.log(`Average score: ${average}`);
+
+// let highest = average.filter((high) => high > 85);
+// console.log(`above 85: ${highest}`);
+
+// let topper = average.sort((a, b) => b - a);
+// console.log(`topper : ${topper[0]}`);
+
+// let dec = average.sort((a, b) => b - a);
+// console.log(`Descending order sorting: ${dec}`)
+const users = [
+    { name: "Ravi", age: 22, active: true, },
+    { name: "Pooja", age: 62, active: false },
+    { name: "Zara", age: 68, active: true },
+    { name: "Tom", age: 19, active: true },
+];
+// let falseAct = users.map((act) => {
+//     if (act.active === true) {
+//         // return {...act, active: false }
+//         act.active = false;
+//     }
+// });
+
+// let demo = users.map((act) => {
+//         console.log
+
+//         if (act.active == false) {
+//             return (act);
+//         }
+//     }
+
+// );
+// console.log(demo);
+
+// console.log(users.filter((pract) => pract.active == false));
+
+// let sciti = users.map((senier) => {
+//     if (senier.age >= 60) {
+//         senier["seniorCitizen"] = true;
+//     } else {
+//         senier["seniorCiizen"] = false
+//     }
+//     return senier;
+// });
+// console.log(sciti);
+
+// console.log(act);
+// console.log(falseAct);
